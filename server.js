@@ -14,7 +14,7 @@ app.get('/about', middleware.requireAuthentication, (req, res) => {  // using ro
 app.use(express.static(__dirname +'/public'));
 
 // set listening port
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log('\n###############################################');
     console.log('\n$$ Express Server is Running on port ' + PORT + ' $$\n');
     console.log('###############################################\n');
